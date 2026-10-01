@@ -1,0 +1,19 @@
+18:12:22 pair: [('56612454', 1938.0), ('56611551', 1782.0)]
+18:42:24 pair: [('56612454', 2000.4), ('56611551', 1804.6)]
+19:12:26 pair: [('56612454', 2014.6), ('56611551', 1807.5)]
+Traceback (most recent call last):
+  File "/Users/samrudh/Documents/Projects/kaggle/Kaggriculture/moe/r7/build/devin/pair_watch.py", line 87, in <module>
+    main()
+    ~~~~^^
+  File "/Users/samrudh/Documents/Projects/kaggle/Kaggriculture/moe/r7/build/devin/pair_watch.py", line 58, in main
+    conv = all(max(s for _, s in h[i]) - min(s for _, s in h[i]) <= EPS
+           ^^^
+  File "/Users/samrudh/Documents/Projects/kaggle/Kaggriculture/moe/r7/build/devin/pair_watch.py", line 58, in <genexpr>
+    conv = all(max(s for _, s in h[i]) - min(s for _, s in h[i]) <= EPS
+               ~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/samrudh/Documents/Projects/kaggle/Kaggriculture/moe/r7/build/devin/pair_watch.py", line 58, in <genexpr>
+    conv = all(max(s for _, s in h[i]) - min(s for _, s in h[i]) <= EPS
+                         ^^^^
+ValueError: too many values to unpack (expected 2)
+22:56:55 pair: [('56612454', 2068.8), ('56611551', 1822.5)]
+22:58:27 pair: [('56612454', 2068.8), ('56611551', 1822.5)]

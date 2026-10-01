@@ -1,0 +1,15 @@
+PRE-REGISTERED 2026-09-26T05:31:22Z (before any game is run)
+Instrument: closed-loop round-robin among lineage builds (band proxy = r3 gate (d) generalised), kagsim, fresh seed-index
+slice [1500:1520] x both seats (n=40 per pair), BT fit on pairwise W/L.
+Retrodiction target: post-lock converged live ratings (HANDOFF 09-25e/j, 09-26a):
+  shep subW_shepherd.py ~2100 (76 g) > hyb subX_hyb2965.py 1974 (139 g) > f55V2 subV2_f55rec.py 1930 (117 g)
+  > sirV1 subV_sir2.py 1897 (109 g) > pipe16 subK2_pipe16.py ~1800
+PASS iff Spearman(BT, live) >= 0.7 AND at most 2 of the 10 pairwise orders disagree.
+If PASS: closed-loop-vs-lineage may rank band-targeted candidates (not top-10 claims).
+If FAIL: no offline instrument we hold retrodicts; rank by live reads only.
+AMENDMENT 2026-09-26T05:31:27Z (still before any game): the seed index ends at 1400, so use raw fresh kagsim seeds 9100001..9100020 x both seats instead of [1500:1520]. Criteria unchanged.
+RESULT 2026-09-26T06:25:53Z: BT elo shep +113, sirV1 +88, hyb +80, f55V2 -92, pipe16 -189 (400 games, 0 errors).
+Spearman vs live = 0.70 (bar >= 0.7), pairwise disagreements 2/10 (hyb-sirV1, f55V2-sirV1; bar <= 2) -> PASS (marginal, at both bars).
+Scale: BT shep-pipe16 = 302 vs live ~300.
+NEXT (registered before running): add C1=subY_C1_predict2.py to the same round-robin (same seeds); map BT->live by least squares
+on the 5 anchors; the mapped value is Opus's LINEAGE-RR prediction for C1's converged live rating.

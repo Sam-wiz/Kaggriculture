@@ -1,0 +1,1 @@
+PRE-REGISTERED 2026-09-26T05:26:04Z: ENGINE retrodiction passes iff Spearman(mean bank/seat over the same 20 dump worlds, pre-lock converged rating) >= 0.7 for K_pipe16 2787, Ob 2686, D_v43 2612, P2 2602, H_v48 2339, L_metav4 2307

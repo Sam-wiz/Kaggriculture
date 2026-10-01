@@ -1,0 +1,59 @@
+# Python / env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.moe_r6_sessions
+
+# OS
+.DS_Store
+
+# Bulk mined data, replays, extracted rows (multi-GB; regenerate locally)
+data/
+logs/
+replays/
+live_eps/
+results/
+meta/
+notebook/
+nb2/
+*.jsonl
+*.jsonl.gz
+*.json.gz
+*.log
+*.csv
+ep_*.json
+
+# Third-party vendored competition kernels (Apache-2.0 sources kept locally;
+# not republished — see NOTICE.txt for upstream credits)
+rivals/
+rival2/
+rivals2/
+rivals3/
+rivals4/
+rivals5/
+rivals6/
+rivals7/
+rivals8/
+rivals9/
+rivalsGH/
+
+# Heavy research workspaces with bulk artifacts (code/docs inside moe/ are kept;
+# only the data outputs below are ignored)
+moe/**/replays/
+moe/**/bc2*.jsonl
+moe/**/results*.jsonl
+mine/tmp*/
+*.tar.gz
+
+# replay/pickle/data bulk missed by first pass
+*.pkl
+episode-*.json
+mine/**/*.json
+mine/tmp*/
+bench_frozen/
+moe/**/*.json
+
+# nested standalone repos (kept locally; not vendored as submodules)
+kaggriculture-island-ga/
+kaggriculture-cppsim/
