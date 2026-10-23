@@ -397,3 +397,23 @@ wheat sells, fert dumps, 2x BUY_PRODUCT arb).
 resubmits. Under best-of-two BT, hedge value = P(hedge > anchor): ACv8 contributes
 real upside where v8hh contributed ~none. Upload mechanics: newest evicts OLDEST
 pair member — to swap only the hedge you must re-upload the anchor after it.
+
+## POST-COMPETITION (written 2026-10-16) — final result and the lessons that matter most
+
+**Final: rank 479 / 10,148 (top 4.7%, inside the silver cut ≈ rank 507).** Final pair [m30b, ACv8];
+ACv8 (r34l-rudr44 GitHub market-book agent) set the team score (private 4527 vs m30b 4329).
+Winners: MMPQ 3314, Victor @ Tufa Labs 3260, DSM 3162, CDE 3063, DECEM 3054. Full post-mortem: `learnings.md`.
+
+1. **The top was learned policies: BC on top replays → self-play PPO** (MMPQ #1: "BC, Self-Play PPO, and
+   Heuristics"; CarsonBurke ~10th: BC on ≥2600 replays + PPO league, Rust sim, ~10 h on one RTX 5090;
+   atsushi11o7: replaced the same public tape openings we used with BC and "improved greatly").
+   Every tape/heuristic lineage — ours included — plateaued at 2100–2700. We first tried RL/BC on 09-29.
+2. **Use the official daily top-episode dumps from day 1** (`kaggle/kaggriculture-episodes-*`, from 07-30);
+   we first pulled them 09-26. Forum is readable via `kaggle competitions topics …`.
+3. **No instrument is trusted until it retrodicts live ratings.** Public-pool gates and open-loop replay both
+   failed badly; the live-anchored lineage RR map (09-26) was the first that worked.
+4. **When the final is a post-deadline BT refit, the displayed ladder is noise** — don't churn slots for it.
+5. **Macro without its executor doesn't transfer** — grafting top-team plans onto a tape chassis lost every time.
+6. **Market games score wins, not margin: sell to deny, don't hold for price.**
+7. **Re-baseline daily on Kaggle notebooks AND GitHub until the deadline** — Harvest V78 (09-27) and ACv8 both
+   appeared after the 09-23 sharing lock.
