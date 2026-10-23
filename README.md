@@ -1,4 +1,4 @@
-# Kaggriculture — agent research repo
+# Kaggriculture — agent research repo - silver medal - 490 rank
 
 Work product from the 2026 Kaggle Kaggriculture competition (deadline 2026-09-30).
 Final live pair: `submissions/subAB_m30b.py` (Harvest-V78 tape engine + BRX2 sell-order
